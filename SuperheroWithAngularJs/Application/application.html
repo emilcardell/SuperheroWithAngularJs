@@ -51,7 +51,7 @@
                                    <link rel="shortcut icon" href="../assets/ico/favicon.png">
   </head>
 
-  <body>
+  <body ng-app="ProductAdmin">
 
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
@@ -67,7 +67,7 @@
             <ul class="nav">
               <li class="active"><a href="#">List products</a></li>
               <li><a href="#addProduct">Add product</a></li>
-              <li><a href="#addProduct">My products (10)</a></li>
+              <li><a href="#myProduct">My products (10)</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
@@ -77,13 +77,13 @@
     <div class="container-fluid">
       <div class="row-fluid">
           
-        <div class="span9 well">
+        <div class="span9 well" ng-controller="CreateProductController">
             <h2 class="form-header">Create product</h2>
             <form class="form-horizontal">
               <div class="control-group">
                 <label class="control-label" for="productName">Product name</label>
                 <div class="controls">
-                  <input type="text" id="productName" placeholder="Product name">
+                  <input type="text" id="productName" ng-model="product.Name" placeholder="Product name"> {{product.Name}}
                 </div>
               </div>
               <div class="control-group">
@@ -156,7 +156,8 @@
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="/Application/scripts/angular.js"></script>
+      <script src="/Application/scripts/angular.js"></script>
+      <script src="/Application/scripts/ProductAdmin.js"></script>
 
 
   </body>

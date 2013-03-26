@@ -1,13 +1,6 @@
-﻿using Nancy;
-using Nancy.TinyIoc;
-using Raven.Client;
+﻿using Nancy.TinyIoc;
 using Raven.Client.Embedded;
 using SuperheroWithAngularJs.Server;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SuperheroWithAngularJs.Specification
 {
@@ -21,7 +14,7 @@ namespace SuperheroWithAngularJs.Specification
 
             store.Initialize();
 
-            container.Register<IDocumentStore>(store);
+            container.Register(store);
         }
     }
 }
