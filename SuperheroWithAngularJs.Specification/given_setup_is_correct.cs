@@ -18,9 +18,9 @@ namespace SuperheroWithAngularJs.Specification
 
             var newProduct = new ProductModel() {Name = "Super Product", Description = "Super duper Product"};
 
-            browser.Post("/Product", c => c.JsonBody(newProduct));
+            browser.Post("/product", c => c.JsonBody(newProduct));
 
-            var response = browser.Get("/AllProducts");
+            var response = browser.Get("/products");
 
             var products = response.Body.DeserializeJson<List<ProductModel>>();
             NumberOfProductsInList = products.Count;

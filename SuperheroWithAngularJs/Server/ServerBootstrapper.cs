@@ -13,7 +13,7 @@ namespace SuperheroWithAngularJs.Server
         {
             base.ConfigureConventions(conventions);
 
-            conventions.StaticContentsConventions.Add(StaticContentConventionBuilder.AddDirectory("Application"));
+            conventions.StaticContentsConventions.Add(StaticContentConventionBuilder.AddDirectory("Client"));
 
         }
 

@@ -1,0 +1,39 @@
+Routing
+-----------------------
+MyApp.config(['$routeProvider', '$locationProvider',
+    function ($routeProvider, $locationProvider) {
+
+        $routeProvider.when('/', {
+            templateUrl: '/Application/templates/ProductListing.html',
+            controller: 'ListAllProductsController'
+        }).
+            when('/createProduct',
+                {
+                    templateUrl: '/Application/templates/CreateProduct.html',
+                    controller: 'CreateProductController'
+                });
+
+    }]);
+
+
+
+Minification
+-----------------------
+var PhoneListCtrl = ['$scope', '$http', function($scope, $http) { /* constructor body */ }];
+
+
+
+Factory
+------------------------
+var myModule = angular.module('myModule', []);
+myModule.factory('serviceId', function() {
+  var shinyNewServiceInstance;
+  //factory function body that constructs shinyNewServiceInstance
+  return shinyNewServiceInstance;
+});
+
+
+Sugar.js
+-----------------------
+.delete(func)
+.find(func)
