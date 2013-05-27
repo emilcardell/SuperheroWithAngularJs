@@ -13,8 +13,6 @@ namespace SuperheroWithAngularJs.Specification
 
         Establish context = () =>
         {
-
-
             var bootstrapper = new SpecificationBootstrapper();
             var browser = new Browser(bootstrapper);
 

@@ -78,15 +78,11 @@
     <Content Include="Application\images\glyphicons-halflings-white.png" />
     <Content Include="Application\images\glyphicons-halflings.png" />
     <Content Include="Application\scripts\angular.js" />
-    <Content Include="Application\scripts\bootstrap.js" />
-    <Content Include="Application\scripts\bootstrap.min.js" />
-    <Content Include="Application\scripts\jquery-1.9.1.min.js" />
+    <Content Include="Application\scripts\sugar-1.3.9.min.js" />
     <Content Include="Application\Specifications\lib\jasmine-1.3.1\jasmine-html.js" />
     <Content Include="Application\Specifications\lib\jasmine-1.3.1\jasmine.css" />
     <Content Include="Application\Specifications\lib\jasmine-1.3.1\jasmine.js" />
     <Content Include="Application\Specifications\SpecRunner.html" />
-    <Content Include="Application\Specifications\spec\PlayerSpec.js" />
-    <Content Include="Application\Specifications\spec\SpecHelper.js" />
     <Content Include="Application\Specifications\src\Player.js" />
     <Content Include="Application\Specifications\src\Song.js" />
     <Content Include="Application\styles\bootstrap-responsive.css" />

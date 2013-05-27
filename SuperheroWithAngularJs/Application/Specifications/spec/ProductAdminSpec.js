@@ -1,10 +1,8 @@
-describe("given_a_ProductListController", function() {
-
-    var fakeScope = {};
-    var ctrl = ListAllProductsController(fakeScope);
+describe("given a ProductListController", function() {
     
-    it("should contain two products", function () {
-        expect(fakeScope.ListOfProducts.length).toBe(2);
+    it("we shoud easly be able to test it", function () {
+        //expect(somthing).toBe(2);
+        throw "No spec written!";
     });
 
 }); 
