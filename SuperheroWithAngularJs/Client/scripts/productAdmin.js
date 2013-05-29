@@ -1,1 +1,1 @@
-var MyApp = angular.module('ProductAdmin', []);
+//var MyApp = angular.module('ProductAdmin', []);

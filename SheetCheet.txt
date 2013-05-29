@@ -35,5 +35,5 @@ myModule.factory('serviceId', function() {
 
 Sugar.js
 -----------------------
-.delete(func)
+.delete(function(item){ item.Id === id})
 .find(func)
